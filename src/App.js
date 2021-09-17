@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 import Nav from './components/Nav';
+import ItemPage from './components/pages/ItemPage';
+import {items} from './js/static-data'
 
-import './App.css'
+import './App.css';
 
 // arrow function
 const App = () => {
@@ -29,7 +31,7 @@ const Content = ({tab}) => {
   switch (tab) {
     default:
       case 'items':
-        return <span>the items</span>;
+        return <ItemPage items={items} />;
       case 'cart':
         return <span>the cart</span>;
   }
