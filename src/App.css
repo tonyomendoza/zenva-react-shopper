@@ -29,6 +29,14 @@
   border-bottom: 4px solid transparent;
 }
 
+.App-nav-item button:hover {
+  color: #999999
+}
+
+.App-nav-item.selected {
+  border-bottom-color: #ffaa3f
+}
+
 .App-content {
   margin: 0 20px;
 }
