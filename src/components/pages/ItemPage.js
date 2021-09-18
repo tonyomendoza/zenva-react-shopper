@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Item from '../../components/Item';
+import Item from '../Item';
 import '../../css/ItemPage.css';
 
 function ItemPage({items, onAddToCart}) {
@@ -9,7 +9,7 @@ function ItemPage({items, onAddToCart}) {
           {items.map(item=>
                 <li key={item.id} className="ItemPage-item">
                     <Item item={item} onAddToCart={() => onAddToCart(item)}>
-                        <button className="Item-addToCart"  onClick={onAddToCart}>
+                        <button className="Item-addToCart"  onClick={() => onAddToCart(item)}>
                             Add to cart
                         </button>
                     </Item>
