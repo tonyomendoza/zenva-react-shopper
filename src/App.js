@@ -1,11 +1,29 @@
 import React, { useState } from 'react';
 
+// core components
 import Nav from './components/Nav';
 import ItemPage from './components/pages/ItemPage';
 import {items} from './js/static-data'
 
 import './App.css';
 import CartPage from './components/pages/CartPage';
+
+// reactstrap components
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 
 const summarizeCart = cart => {
   const groupItems = cart.reduce((summary, item) => {
@@ -48,28 +66,34 @@ const App = () => {
 
   return (
     <div className="App">
-      <Nav
+      {/* <Nav
         activeTab={activeTab}
         onTabChange={setActiveTab}
-      />
+      /> */}
+      <Nav 
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        />
       <main className="App-content">
         <Content
           tab={activeTab}
           onAddToCart={addToCart}
           cart={summarizeCart(cart)}
-          onRemoveItem={removeItem}/>
+          onRemoveItem={removeItem}
+          page={activeTab}
+          />
       </main>
     </div>
   );
 };
 
-const Content = ({tab, onAddToCart, cart, onRemoveItem}) => {
+const Content = ({tab, onAddToCart, cart, onRemoveItem, page}) => {
   switch (tab) {
     default:
       case 'items':
         return <ItemPage items={items} onAddToCart={onAddToCart} />;
       case 'cart':
-        return <CartPage items={cart} onAddOne={onAddToCart} onRemoveOne={onRemoveItem}/>;
+        return <CartPage items={cart} onAddOne={onAddToCart} onRemoveOne={onRemoveItem} page={page}/>;
   }
 };
 

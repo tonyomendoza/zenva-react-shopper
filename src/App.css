@@ -1,13 +1,13 @@
-.App {
+/* .App {
   max-width: 800px;
   margin: 0 auto;
-}
+} */
 
-.App-nav {
+/* .App-nav {
   margin: 20px;
   padding: 18px;
   border-bottom: 2px solid #508fca;
-}
+} */
 
 .App-nav ul {
   padding: 0;
@@ -26,7 +26,8 @@
   display: inline-block;
   margin-right: 32px;
   font-size: 24px;
-  border-bottom: 4px solid transparent;
+  border-bottom: 0px solid transparent;
+  cursor: pointer;
 }
 
 .App-nav-item button:hover {
@@ -34,9 +35,12 @@
 }
 
 .App-nav-item.selected {
-  border-bottom-color: #ffaa3f
+  border-bottom: 4px solid transparent;
+  border-bottom-color: #ffaa3f;
+  cursor: default;
 }
 
 .App-content {
-  margin: 0 20px;
+  max-width: 800px;
+  margin: 50px auto;
 }
