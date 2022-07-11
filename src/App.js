@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 // core components
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import ItemPage from './components/pages/ItemPage';
 import {items} from './js/static-data'
 
@@ -83,6 +84,7 @@ const App = () => {
           page={activeTab}
           />
       </main>
+      <Footer/>
     </div>
   );
 };

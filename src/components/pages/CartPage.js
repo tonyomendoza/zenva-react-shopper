@@ -3,6 +3,23 @@ import PropTypes from 'prop-types';
 import Item from '../../components/Item';
 import '../../css/CartPage.css';
 
+// reactstrap components
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
+
 function CartPage({ items, onAddOne, onRemoveOne, page }) {
     let dollarUSLocale = Intl.NumberFormat('en-US');
 
@@ -26,13 +43,14 @@ function CartPage({ items, onAddOne, onRemoveOne, page }) {
                     <li key={item.id} className="CartPage-item">
                         <Item item={item} page={page}>
                             <div className="CartItem-Controls">
-                                <button className="CartItem-removeOne" onClick={() => onRemoveOne(item)}>
-                                    &ndash;
-                                </button>
+                                <Button className="CartItem-removeOne secondary" onClick={() => onRemoveOne(item)}>
+                                    <i class="fa-solid fa-minus"></i>
+                                </Button>
                                 <span className="CartItem-count">{item.count}</span>
-                                <button className="CartItem-addOne" onClick={() => onAddOne(item)}>
-                                    +
-                                </button>
+                                <Button className="CartItem-addOne secondary" onClick={() => onAddOne(item)}>
+                                    {/* + */}
+                                    <i class="fa-solid fa-plus"></i>
+                                </Button>
                             </div>
                         </Item>
                     </li>

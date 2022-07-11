@@ -94,18 +94,18 @@ function PaperKitNav({ activeTab, onTabChange }) {
                     <Nav navbar>
                         <NavItem>
                             <NavLink className={itemClass('items')} onClick={() => onTabChange('items')}>
-                                <i className="nc-icon nc-layout-11" /> Items
+                                <i class="fa-solid fa-bag-shopping"></i> Items
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className={itemClass('cart')} onClick={() => onTabChange('cart')}>
-                                <i className="nc-icon nc-book-bookmark" /> Cart
+                                <i class="fa-solid fa-cart-shopping"></i> Cart
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
                                 data-placement="bottom"
-                                href="https://twitter.com/CreativeTim?ref=creativetim"
+                                href="http://www.fiverr.com/s2/3bcc16d610"
                                 target="_blank"
                                 title="Follow us on Twitter"
                             >
@@ -116,7 +116,7 @@ function PaperKitNav({ activeTab, onTabChange }) {
                         <NavItem>
                             <NavLink
                                 data-placement="bottom"
-                                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                                href="http://www.fiverr.com/s2/3bcc16d610"
                                 target="_blank"
                                 title="Like us on Facebook"
                             >
@@ -127,7 +127,7 @@ function PaperKitNav({ activeTab, onTabChange }) {
                         <NavItem>
                             <NavLink
                                 data-placement="bottom"
-                                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                                href="http://www.fiverr.com/s2/3bcc16d610"
                                 target="_blank"
                                 title="Follow us on Instagram"
                             >
@@ -138,7 +138,7 @@ function PaperKitNav({ activeTab, onTabChange }) {
                         <NavItem>
                             <NavLink
                                 data-placement="bottom"
-                                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                                href="https://github.com/tonyomendoza"
                                 target="_blank"
                                 title="Star on GitHub"
                             >

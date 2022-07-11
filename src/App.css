@@ -42,5 +42,6 @@
 
 .App-content {
   max-width: 800px;
+  min-height: 640px;
   margin: 50px auto;
 }
