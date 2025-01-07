@@ -70,7 +70,7 @@ function PaperKitNav({ activeTab, onTabChange }) {
                         data-placement="bottom"
                         href="https://www.fiverr.com/tonyomendoza"
                         target="_blank"
-                        title="Tony Mendoza"
+                        title="Developer Tony Mendoza"
                     >
                         Mendoza Creative Solutions
                     </NavbarBrand>
